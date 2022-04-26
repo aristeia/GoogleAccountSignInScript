@@ -189,6 +189,12 @@ class GoogleAccountSignInScript:
             elif self.d(descriptionMatches="(?i)don\'t sync.*").exists:
                 self.d(descriptionMatches="(?i)don\'t sync.*").click.wait()
                 sleep(5)
+            elif self.d(textMatches="(?i)don\'t turn on.*").exists:
+                self.d(textMatches="(?i)don\'t turn on.*").click.wait()
+                sleep(5)
+            elif self.d(descriptionMatches="(?i)don\'t turn on.*").exists:
+                self.d(descriptionMatches="(?i)don\'t turn on.*").click.wait()
+                sleep(5)
 
             # Click 'I agree'
             if self.d(textMatches="(?i)i agree").exists:
