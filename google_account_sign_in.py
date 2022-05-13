@@ -363,7 +363,7 @@ if __name__ == "__main__":
         google_account_sign_in_class.parse_arguments()
         TIMEOUT_DURATION += 300 * (len(google_account_sign_in_class.apps)-1)
         try:
-            success = device_farm_google_account_sign_in_class.perform_google_play_walkthrough()
+            success = google_account_sign_in_class.perform_google_play_walkthrough()
         except TimeoutError:
             print("Timed out!")
             success = False

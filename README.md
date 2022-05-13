@@ -59,7 +59,7 @@ If you are using any other Appium test type, then simply include these files in 
 Then the following code to the test phase of your test spec file:
 
 ```yaml
-      - python tests/test_google_account_installer_and_maps_downloader.py YOUR_ARGUMENTS_HERE
+      - python google_account_sign_in.py YOUR_ARGUMENTS_HERE
 ```
 
 ## General Usage Note
